@@ -19,6 +19,6 @@ class InvoiceController extends Controller
 
     public function stream()
     {
-        return PDF::loadView('invoice')->stream('invoice-' . time() . '-data.pdf');
+        return PDF::loadView('pdf')->stream('invoice-' . time() . '-data.pdf');
     }
 }
